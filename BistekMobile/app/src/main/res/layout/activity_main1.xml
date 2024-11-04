@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main1Activity">
+
+    <TextView
+        android:id="@+id/locationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Konum: "
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/boyutSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@id/selectedBoyutText"
+        android:layout_marginTop="477dp"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:id="@+id/yönSpinner"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/boyutSpinner"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="130dp"/>
+
+    <TextView
+        android:id="@+id/selectedBoyutText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Boyut:"
+        android:layout_below="@id/locationText"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="75dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/selectedYönText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yön:"
+        android:layout_below="@id/selectedBoyutText"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="75dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/selectedLevhaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Levha Adı:"
+        android:layout_below="@id/selectedYönText"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="75dp"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/addToDatabaseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectedLevhaText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Ekle" />
+
+    <EditText
+        android:id="@+id/levhaAdiEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yönSpinner"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="175dp"
+        android:padding="20dp"
+        android:inputType="text"
+         />
+
+    <Button
+        android:id="@+id/verileriGorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/locationText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="200dp"
+        android:text="Verileri Gör" />
+
+    <Button
+        android:id="@+id/showOnMapButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/locationText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="140dp"
+        android:text="Verileri Haritada Göster" />
+
+    <Button
+        android:id="@+id/syncButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectedLevhaText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="Yerel Verileri Ekle" />
+
+
+</RelativeLayout>
